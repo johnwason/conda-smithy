@@ -108,6 +108,7 @@ jobs:
         CONFIG: {% raw %}${{ matrix.CONFIG }}{% endraw %}
         UPLOAD_PACKAGES: {% raw %}${{ matrix.UPLOAD_PACKAGES }}{% endraw %}
         CI: github_actions
+        CONDA_BUILD_PATH: D:\bld
 {%- if upload_on_branch %}
         UPLOAD_ON_BRANCH: {{ upload_on_branch }}
 {%- endif %}
